@@ -1,0 +1,26 @@
+name: portfolio
+description: Something cool.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  animated_text_kit: ^3.1.0
+  cupertino_icons: ^1.0.2
+  url_launcher: ^5.5.0
+  flutter_signin_button: ^1.0.0
+
+
+flutter:
+  assets:
+    - assets/
+    - assets/images/
+  uses-material-design: true
+
+  fonts:
+    - family: Titillium
+      fonts:
+        - asset: assets/TitilliumWeb-Light.ttf
