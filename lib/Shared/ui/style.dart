@@ -61,3 +61,15 @@ TextStyle h5 = TextStyle(
     fontFamily: 'Titillium',
     fontWeight: FontWeight.w200,
     color: Colors.white);
+
+TextStyle h4 = TextStyle(
+    fontSize: 30,
+    fontFamily: 'Titillium',
+    fontWeight: FontWeight.w500,
+    color: Colors.black);
+
+TextStyle h7 = TextStyle(
+    fontSize: 10,
+    fontFamily: 'Titillium',
+    fontWeight: FontWeight.w100,
+    color: Colors.white);
