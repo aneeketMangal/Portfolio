@@ -30,8 +30,6 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/Shared/const/const.dart';
 
 import 'components/about_section_text.dart';
-import 'components/about_text_with_sign.dart';
-import 'components/experience_card.dart';
 
 class AboutSection extends StatelessWidget {
   @override
