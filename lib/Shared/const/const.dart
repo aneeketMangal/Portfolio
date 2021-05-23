@@ -25,6 +25,9 @@ const List<Buttons> buttonOfhandles = [
   Buttons.Email
 ];
 
+const String resumeLink =
+    "https://drive.google.com/file/d/1MeJZ0EtXfFe11jSDqk-PNk7sr9Fl86CV/view?usp=sharing";
+
 List<String> nameOfHandles = [
   'assets/images/facebook.png',
   'assets/images/github.png',

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/Shared/const/const.dart';
+import 'package:portfolio/Shared/ui/style.dart';
 
 import 'package:portfolio/Shared/widgets/components/section_title.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AboutSection extends StatelessWidget {
   @override
@@ -9,11 +11,11 @@ class AboutSection extends StatelessWidget {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.3),
-        image: DecorationImage(
-          fit: BoxFit.cover,
-          image: AssetImage("assets/images/about_bg.png"),
-        ),
+        color: Colors.white,
+        // image: DecorationImage(
+        //   fit: BoxFit.cover,
+        //   image: AssetImage("assets/images/about_bg.jpg"),
+        // ),
       ),
       // margin: EdgeInsets.symmetric(vertical: kDefaultPadding * 2),
       // constraints: BoxConstraints(maxWidth: 1110),
@@ -41,26 +43,31 @@ class AboutSection extends StatelessWidget {
                         height: 1.2),
                   ),
                 ),
-                Center(
-                  child: OutlineButton(
-                    padding: EdgeInsets.symmetric(
-                      vertical: kDefaultPadding,
-                      horizontal: kDefaultPadding * 2.5,
-                    ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50),
-                    ),
-                    borderSide: BorderSide(color: Color(0xFFEDEDED)),
-                    onPressed: () {},
-                    child: Row(
-                      children: [
-                        Image.asset(
-                          "assets/images/download.png",
-                          height: 40,
-                        ),
-                        SizedBox(width: kDefaultPadding),
-                        Text("My Resume"),
-                      ],
+                Container(
+                  padding: EdgeInsets.symmetric(
+                    vertical: kDefaultPadding / 1.7,
+                    horizontal: kDefaultPadding,
+                  ),
+                  width: 250,
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(30),
+                    // borderSide: BorderSide(color: Color(0xFFEDEDED)),
+                  ),
+                  child: InkWell(
+                    onTap: () => launch(resumeLink),
+                    child: Center(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/images/download.png",
+                            height: 40,
+                          ),
+                          SizedBox(width: kDefaultPadding),
+                          Text("My Resume", style: h4.copyWith(fontSize: 20)),
+                        ],
+                      ),
                     ),
                   ),
                 )

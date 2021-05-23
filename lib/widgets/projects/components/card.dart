@@ -119,12 +119,14 @@ class ProjectTile extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Container(
-            decoration: BoxDecoration(
+          decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-            ),
-            height: 350,
-            width: 400,
-            child: Image.asset(recentWorks[index].image, fit: BoxFit.fill)),
+              color: Colors.lightBlue.withOpacity(0.1)),
+          height: 350,
+          width: 400,
+        ),
+        // child:
+        //     Image.asset(recentWorks[index].image, height: 350, width: 100)),
         SizedBox(
           height: kDefaultPadding,
         ),

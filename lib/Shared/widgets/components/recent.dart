@@ -31,13 +31,13 @@ List<RecentWork> recentWorks = [
       title:
           "This project covers the implementation of advanced graph algorithms such as Johnson's algorithm and Endmund's branching algorithm. It also covers implementation of fibonacci and binomial trees.",
       category: "Graph Theory Analysis",
-      image: "assets/images/work_1.png",
+      image: "assets/images/project_3.png",
       color: Colors.blueAccent),
   RecentWork(
       id: 4,
       title:
           "A FPGA(Field Programming Gate Arrays) is an integrated circuit which can be configured by the user to achieve multiple functionalities. This project is a verilog implementation of one such FPGA hardware which can work as a MUX, 8-bit shift register, and a 4-bit adder.",
       category: "FPGA",
-      image: "assets/images/work_1.png",
+      image: "assets/images/project_4.png",
       color: Colors.pinkAccent),
 ];
