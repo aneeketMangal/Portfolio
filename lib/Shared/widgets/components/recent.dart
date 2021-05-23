@@ -23,7 +23,7 @@ List<RecentWork> recentWorks = [
     title:
         "It is a arcade game collection, consisting of games such as minesweeper, hangman and snake. Built using Flutter the game also has a leader-board and user feature. The app focuses on extensibility and clean architecture.",
     category: "The Game Dome",
-    image: "assets/images/project_2.png",
+    image: "assets/images/project_2.jpg",
     color: Colors.limeAccent,
   ),
   RecentWork(
