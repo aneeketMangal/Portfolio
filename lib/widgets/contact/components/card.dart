@@ -19,8 +19,8 @@ class _ContactCardState extends State<ContactCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 150,
-      width: 150,
+      height: 20,
+      width: 20,
       child: InkWell(
         onHover: (value) {
           setState(() {
@@ -34,7 +34,7 @@ class _ContactCardState extends State<ContactCard> {
             horizontal: kDefaultPadding * 1.5,
           ),
           decoration: BoxDecoration(
-            color: contactColors[position],
+            color: Colors.transparent,
             borderRadius: BorderRadius.circular(10),
             boxShadow: [if (isHover) kDefaultCardShadow],
           ),

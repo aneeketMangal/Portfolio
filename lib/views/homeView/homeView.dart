@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/Shared/const/const.dart';
 import 'package:portfolio/widgets/contact/contact.dart';
 import 'package:portfolio/widgets/introduction/introduction.dart';
+import 'package:portfolio/widgets/projects/projects.dart';
 import 'package:portfolio/widgets/top/top_section.dart';
 
 class HomeView extends StatelessWidget {
@@ -12,8 +13,9 @@ class HomeView extends StatelessWidget {
         child: Column(
           children: [
             TopSection(),
-            SizedBox(height: kDefaultPadding * 2),
+            // SizedBox(height: kDefaultPadding * 2),
             AboutSection(),
+            RecentWorkSection(),
             ContactBox()
           ],
         ),

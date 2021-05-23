@@ -29,7 +29,7 @@ class CenterContent extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Hi There!!",
+                    "Hi There!!👋",
                     style: Theme.of(context)
                         .textTheme
                         .headline5

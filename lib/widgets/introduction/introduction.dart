@@ -1,64 +1,48 @@
-// import 'package:flutter/material.dart';
-// import 'package:portfolio/Shared/const/const.dart';
-// import 'package:portfolio/Shared/ui/style.dart';
-
-// class Introduction extends StatelessWidget {
-//   const Introduction({Key key}) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     Size size = MediaQuery.of(context).size;
-//     return Container(
-//       margin: EdgeInsets.symmetric(vertical: 2),
-//       constraints: BoxConstraints(maxWidth: 1110),
-//       child: Column(
-//         crossAxisAlignment: CrossAxisAlignment.start,
-//         mainAxisAlignment: MainAxisAlignment.center,
-//         children: <Widget>[
-//           Text(navBarItems[0], style: h1),
-//           Text(
-//             navBarItemsDetails[0],
-//             style: h5,
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 import 'package:portfolio/Shared/const/const.dart';
-
-import 'components/about_section_text.dart';
+import 'package:portfolio/Shared/widgets/components/section_title.dart';
 
 class AboutSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: kDefaultPadding * 2),
-      constraints: BoxConstraints(maxWidth: 1110),
-      child: Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                "About \me",
-                style: Theme.of(context)
-                    .textTheme
-                    .headline2
-                    .copyWith(fontWeight: FontWeight.bold, color: Colors.black),
-              ),
-              Expanded(
-                child: AboutSectionText(
-                  text:
-                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      width: double.infinity,
+      decoration: BoxDecoration(
+        // color: Colors.amber.withOpacity(0.3),
+        image: DecorationImage(
+          fit: BoxFit.cover,
+          image: AssetImage("assets/images/projects_bg.png"),
+        ),
+      ),
+      // margin: EdgeInsets.symmetric(vertical: kDefaultPadding * 2),
+      // constraints: BoxConstraints(maxWidth: 1110),
+      child: Padding(
+        padding: const EdgeInsets.only(top: 2 * kDefaultPadding),
+        child: Column(
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SectionTitle(
+                  title: "About Me",
+                  color: Colors.green,
                 ),
-              ),
-            ],
-          ),
-          SizedBox(height: kDefaultPadding * 3),
-        ],
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                  child: Text(
+                    "hullo",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w200,
+                        color: kTextColor,
+                        height: 2),
+                  ),
+                )
+              ],
+            ),
+            SizedBox(height: kDefaultPadding * 3),
+          ],
+        ),
       ),
     );
   }
