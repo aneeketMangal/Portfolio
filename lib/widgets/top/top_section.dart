@@ -21,7 +21,6 @@ class TopSection extends StatelessWidget {
       ),
       child: Column(
         children: [
-          NavBar(),
           SizedBox(height: 90),
           Container(
             height: 620,
@@ -32,7 +31,7 @@ class TopSection extends StatelessWidget {
               children: [
                 CenterContent(size),
                 Positioned(
-                  bottom: 120,
+                  bottom: 170,
                   right: 0,
                   child: PersonPic(),
                 ),

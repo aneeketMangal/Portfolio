@@ -12,15 +12,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Portfolio',
-      initialRoute: '/zeroth',
-      routes: {
-        '/zeroth': (context) => HomeView(),
-        // '/first': (context) => SnakeGame(),
-        // '/second': (context) => Minesweeper(),
-        // '/third': (context) => Hangman(),
-        // '/fourth': (context) => About(),
-        // '/fifth': (context) => GameList(),
-      },
+      // initialRoute: '/zeroth',
+      // routes: {
+      //   '/zeroth': (context) => HomeView(),
+      //   // '/first': (context) => SnakeGame(),
+      //   // '/second': (context) => Minesweeper(),
+      //   // '/third': (context) => Hangman(),
+      //   // '/fourth': (context) => About(),
+      //   // '/fifth': (context) => GameList(),
+      // },
+      home: HomeView(),
     );
   }
 }

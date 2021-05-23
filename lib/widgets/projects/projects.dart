@@ -3,6 +3,7 @@ import 'package:portfolio/Shared/const/const.dart';
 import 'package:portfolio/Shared/widgets/components/recent.dart';
 import 'package:portfolio/Shared/widgets/widgets.dart';
 import 'package:portfolio/widgets/projects/components/card.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class RecentWorkSection extends StatelessWidget {
   @override
@@ -35,7 +36,9 @@ class RecentWorkSection extends StatelessWidget {
                 runSpacing: kDefaultPadding * 3,
                 children: List.generate(
                   recentWorks.length,
-                  (index) => RecentWorkCard(index: index, press: () {}),
+                  (index) => RecentWorkCard(
+                      index: index,
+                      press: () => launch(recentWorks[index].link)),
                 ),
               ),
             ),
