@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:portfolio/Shared/const/const.dart';
 
+import 'card.dart';
+
 class CenterContent extends StatelessWidget {
   final Size size;
   const CenterContent(this.size);
@@ -44,13 +46,12 @@ class CenterContent extends StatelessWidget {
                       height: 1,
                     ),
                   ),
-                  Text(
-                    "Pre-final Year Student",
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline5
-                        .copyWith(color: Colors.white),
-                  )
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      for (int i = 0; i < 4; i++) ContactCard(i),
+                    ],
+                  ),
                 ],
               ),
             ),
